@@ -25,5 +25,6 @@ urlpatterns = [
     path('login/', views.login),
     path('index/', views.index),
     path('logout/', views.logout),
+    path('log/', views.get_log),
     path('host/<int:user_bind_host_id>/', views.connect),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

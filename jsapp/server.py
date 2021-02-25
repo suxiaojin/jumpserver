@@ -65,7 +65,7 @@ class WSSHBridge:
                 data = json.loads(str(data))
 
                 if 'data' in data:
-                    # print('websocket -> ssh', data['data'])
+                    #print('websocket -> ssh', data['data'])
                     self.cmd_string += data['data']
                     channel.send(data['data'])
         finally:
